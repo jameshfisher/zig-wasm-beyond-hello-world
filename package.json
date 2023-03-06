@@ -1,0 +1,10 @@
+{
+  "name": "zig-wasm-beyond-hello-world",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "build": "zig build-lib numpy.zig -target wasm32-freestanding -dynamic -rdynamic -O3",
+    "start": "node --experimental-wasm-modules main.js"
+  },
+  "type": "module"
+}
